@@ -1,0 +1,25 @@
+@background-color: aqua;
+@font-family:Tahoma;
+@primary-color: green;
+@secondary-color:yellow;
+@line-hieght: 1em + 1em;
+body{
+  font-family: @font-family;
+  background: @background-color;
+  line-height: @line-hieght;
+}
+.primary-text{
+  color: @primary-color;
+}
+.btn{
+  padding: 10px 15px;
+  border: 0;
+  color: @secondary-color;
+}
+.primary-btn:extend(.btn){
+  background: @primary-color;
+}
+.bordered{
+  border-top: dotted 1px red;
+  border-bottom: dotted 2px #000;
+}
