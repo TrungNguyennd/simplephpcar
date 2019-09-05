@@ -1,0 +1,1 @@
+alert('cố lên trung ơi');
