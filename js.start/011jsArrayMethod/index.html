@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>các phương thức trong js array </h1>
+<p id="target">nội dung ban đầu </p>
+<button id="change" onclick="changeText()">tostring array</button>
+<button id="changes" onclick="changesText()">join array</button>
+<script type="text/javascript">
+    function changeText() {
+        var student=["nguyễn văn a"," nguyễn văn b"," nguyễn văn c","nguyễn văn d"];
+        // phương thức chuyển đổi 1 mảng về 1 chuỗivà phân tách các phần tủ bằng dấu ,
+        document.getElementById('target').innerText=student.toString();
+    }
+    function changesText() {
+        var students=["nguyễn văn a"," nguyễn văn b"," nguyễn văn c","nguyễn văn d"];
+        //join chuyển đổi mảng thàng chuỗi nhưng cho phép chọn kí tụ phân tách
+        document.getElementById('target').innerText=students.join("@");
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>mảng trong js </h1>
+<script type="text/javascript">
+    // kiểu dữ liệu dạng chuỗi
+    var hoten="nguyễn văn trung";
+    //kiểu dữ liệu số
+    var tuoi="23";
+    //danh sách tên các sinh viên
+    // phân tách các phần tử trong mảng bằng dấu ,
+    var student=["nguyên văn a", " nguyễn văn v", " nguyễn văn c"];
+    // trong cấu trúc của mảng gồm key và value
+    // trong mảng key bắt đầu từ 0
+    //key giống như số thứ tự
+    // để truy xuất vào các phần tử của mảng chúng ta sẽ truy xuất qua key
+    /**
+    key  =0 chứa value nguyễn văn a
+    key  =1 chứa value nguyễn văn v
+    key  =2 chứa value nguyễn văn c
+     */
+    var tuoi=[19,20,21];
+/**
+*key =0 chứa value 19
+*key =1 chứa value 20
+*key =2 chứa value 21
+ */
+var student1={name:"nguyễn văn a", age:19};
+var student2={name:"nguyễn văn v", age:20};
+var student3={name:"nguyễn văn c", age:21};
+var students_obj=[student1,student2,student3];
+    /**
+     * mảng students_obj
+     * key 0 chứa value student 1
+     * key 1 chứa value student 2
+     * key 2 chứa value student 3
+     */
+    /**
+     * truy xuất các phần tử thông qua key
+     * các bạn nhớ phần tử bao gồm key và value
+     * tên_mảng[key]
+     */
+    console.log(student[1]);
+    console.log(tuoi[1]);
+    console.log(students_obj[1]);
+</script>
+</body>
+</html>

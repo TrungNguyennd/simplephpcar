@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>câu lệnh điều kiện else if</h3>
+<pre>
+    if(điều kiện 1){
+    //điều kiện 1 trả về true thì câu lệnh trong đây được chạy
+    }else if( điều kiện 2){
+    // điều kiện 2 true thì câu lệnh trong đây được chạy
+    }else if(diều kiện 3){
+    // điều kiện 3 true thì câu lệnh trong đây được chạy
+    }else{
+    // khi mà điều kiện 1,2,3.. trả về flase thì các câu lệnh trong slse được chạy
+    }
+    chú ý : khi mà
+    điều kiện 1 ==true,
+    điều kiện 2== true,
+    điều kiện 3==true
+   thì  điều kiện nào mà js chạy trước thì nó sẽ chọn các câu lệnh trong điều kiện chạy
+    ví dụ : gặp điều kiện 1 mà true thì chỉ thực hiện code trong dấu {} của điều kiện 1
+    nhưng mà đảo điều kiện 2 lên trước điều kiện 1 thì chỉ chạy điều kiện 2 mà thôi
+
+
+</pre>
+<script type="text/javascript">
+
+    var age=55;
+    if(age<18){
+        console.log("trẻ em");
+    }else if (age<30){
+        console.log("tuổi thanh niên");
+    } else  if (age<50){
+        console.log("tuổi trung niên");
+    } else {
+        console.log("tuổi già ");
+    }
+</script>
+</body>
+</html>

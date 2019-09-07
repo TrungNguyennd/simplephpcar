@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> funciton js sẽ là 1 khối được khai báo để thực hiện nhiệm vụ cụ thể như hàm tính chu vi hình tròn hay chu vi hình vuông</h1>
+<p>hàm tính chuyển đổi độ c sang độ f</p>
+<p>hàm tính điểm trung bình học sinh và sau đó xếp loại học sinh đó</p>
+<script type="text/javascript">
+    //r là tham số của hàm chỉ có giá trị trong hàm
+    //r là tham số và luôn đi kèm với khai báo hàm
+    function chuvihinhtron(r) {
+        // code thực thi
+
+    var chuvi= r*2*3.14;
+    // biến returrn sẽ trả về giá trị của biến chu vi và kết thúc hàm
+        return chuvi;
+        // tất cả các hàm sau biến return thì sẽ không chạy
+    }
+    //gọi hàm bằng cách gọi tên hàm
+    var c= chuvihinhtron(5);
+    alert(' chu vi hình tròn có bán kính là 5cm : ' +c);
+    //tại sao phải sử dụng hàm
+    //cho phép dễ duy trì và bảo trì năng cấp mã nguồn
+    //cũng như là module mã nguồn
+</script>
+</body>
+</html>
