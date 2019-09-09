@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>phương thức html() trong jquer</h1>
+<div class="containerA" style="padding: 50px; background-color: coral;color: #0092dd">
+    <div class="row">
+        <div class="col1">
+            nếu như ai đó bảo tôi rằng tôi có nhớ người đó không thì tôi bảo rằng tôi không nhớ
+            tầm này thì yêu đương cái gì nuôi thân chả nổi đây này
+            cố gắng đi nhé vì gia đình vì bố mẹ vì tương lai sau này nữa nên khó khăn mấy cũng chỉ nghĩ  thôi chứ không được  nghỉ.
+
+    </div>
+        <div class="col2">
+            nếu như ai đó bảo tôi rằng tôi có nhớ người đó không thì tôi bảo rằng tôi không nhớ
+            tầm này thì yêu đương cái gì nuôi thân chả nổi đây này
+            cố gắng đi nhé vì gia đình vì bố mẹ vì tương lai sau này nữa nên khó khăn mấy cũng chỉ nghĩ  thôi chứ không được  nghỉ.
+
+        </div>
+    </div>
+nếu như ai đó bảo tôi rằng tôi có nhớ người đó không thì tôi bảo rằng tôi không nhớ
+    tầm này thì yêu đương cái gì nuôi thân chả nổi đây này
+    cố gắng đi nhé vì gia đình vì bố mẹ vì tương lai sau này nữa nên khó khăn mấy cũng chỉ nghĩ  thôi chứ không được  nghỉ.
+
+</div>
+<button id="control" style="margin: 30px">chuyen html</button>
+<div class="containerB" style="padding: 50px;background-color: coral;color: #0092dd" >
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#control').on("click", function () {
+            /**
+             * html() dùng để lấy html trong 1 selecter
+             * html(value) dùng để đặt đoạn mã  value vào  trong 1 selecter
+             * .text thì  chỉ chuyển được văn bản trong thẻ selecter còn
+             * .html() thì chuyển cả văn bản cũng như css của đoạn mã đấy
+             * @type {jQuery}
+             */
+           var ahtml= $(".containerA").html();
+           $('.containerB').html(ahtml);
+        })
+    })    
+</script>
+</body>
+</html>

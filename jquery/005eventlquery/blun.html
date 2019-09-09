@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-sm-12">
+            <h1> sự kiện blun của form</h1>
+            <form name="register" action="" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="username">username</label>
+                    <input type="text"  name="uersname" class="form-control" id="username" placeholder="username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label>gender </label>
+                    <input name="gender"  type="radio" value=" male ">male
+                    <input name="gender" value="famale " type="radio"> famale
+                </div>
+                <div class="form-group ">
+                    <labal>location </labal>
+                    <select class="localtion ">
+                        <option value=" ha noi ">ha noi </option>
+                        <option value=" ho chi minh ">ho chi minh  </option>
+                        <option value=" da nang ">da nang  </option>
+
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("input[type='email']").focus(function(){
+           $(this).css("border", "2px solid red");
+
+        });
+        $("input[type='email']").blur(function(){
+            $(this).css("border", "0px solid white");
+
+        });
+        $("input[type='text']").focus(function(){
+            $(this).css("border", "2px solid red");
+
+        });
+        $("input[type='text']").blur(function(){
+            $(this).css("border", "0px solid white");
+
+        });
+        $("input[type='password']").focus(function(){
+            $(this).css("border", "2px solid red");
+
+        });
+        $("input[type='password']").blur(function(){
+            $(this).css("border", "0px solid white");
+
+        });
+        $("select").focus(function(){
+            $(this).css("border", "2px solid red");
+
+        });
+        $("select").blur(function(){
+            $(this).css("border", "0px solid white");;
+
+        });
+
+
+    })
+</script>
+</body>
+</html>

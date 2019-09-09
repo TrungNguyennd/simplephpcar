@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>gắn nhiều sự kiện vào method on </h1>
+<div class="container " style="background: aqua;color: chocolate">
+    hôm nay tâm trạng tôi không được vui có cái j đó làm tôi nản lòng
+    một phần là hôm nay tôi thấy thương e ngọc hôm qua phải đi nước ngoài
+    một mình sống nơi đất khách quê người nhưng cố lên em nhé mn ở quê luôn dõi theo
+    em ngoài kia nếu vất vả khó khăn quá thì về nhà em nhé.con tôi thì một phần cũng buồn
+    vì không muốn đi làm nhưng vẫn sẽ cố gắng mạnh mẽ lên cuối tuần về quê nhé
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.container').on({
+            click: function () {
+                $(this).css("background","red");
+            },
+            dblclick:function () {
+                $(this).css("background","blue");
+            },
+            mouseenter: function () {
+                $(this).css("background","geeen");
+            },
+            mouseleave: function () {
+                $(this).css("background","aqua");
+            }
+
+            });
+
+
+    });
+</script>
+
+</body>
+</html>

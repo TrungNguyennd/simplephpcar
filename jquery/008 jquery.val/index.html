@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>val() trong jq</h1>
+<form name="regester " method="post" action="">
+    <div style=" margin: 20px; padding: 10px">
+        <label>Username</label>
+        <input type="text"name="uesrname" value="" placeholder="nhập username  ">
+    </div>
+    <div style="margin: 20px">
+        <button id="control" type="button"> copy nội dung  trong input </button>
+
+    </div>
+    <div style=" margin: 20px; padding: 10px">
+        <label>Username copy</label>
+        <input type="text"name="uesrnamecopy" value="" placeholder="nhập username  ">
+    </div>
+
+</form>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#control').on("click",function () {
+           var username= $("input[name='username']").val();
+            $("input[name='uesrnamecopy']").val(username);
+        });
+    })
+</script>
+</body>
+</html>

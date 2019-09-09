@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+    <h1> sự kiện resize trong jquery </h1>
+    <p id="cal" style="color: #0092dd;margin-top: 30px"></p>
+
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // lấy ra được độ rộng của cửa sôr trình
+        var w=$(window).width();
+        // lấy ra được chiều cao của cửa sổ trình duyệt
+        var h=$(window).height();
+
+        $("#cal").html(" do rong :" + w + ("do cao :") + h) ;
+         $(window).resize(function () {
+             // lấy ra được độ rộng của cửa sôr trình
+             var w=$(window).width();
+             // lấy ra được chiều cao của cửa sổ trình duyệt
+             var h=$(window).height();
+
+             $("#cal").html(" do rong :" + w + ("do cao :") + h) ;
+         })
+
+    })
+</script>
+</body>
+</html>
